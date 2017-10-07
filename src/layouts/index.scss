@@ -1,0 +1,26 @@
+// --------------------------------------------------------------------------
+//
+//   Layout
+//
+// --------------------------------------------------------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #2d2f38;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#___gatsby {
+  position: relative;
+  height: 100%;
+}
