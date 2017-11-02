@@ -1,1 +1,8 @@
 language: node_js
+deploy:
+  provider: heroku
+  api_key:
+    secure: aK2uU/Xuba3GJ3Ze/9mkLvZ50Lg91aXR+aCe4l3y4D15eCP20o9/AU/l/wRYlk/If1djSJQ9Oytuj6V2le8p3u/1LbsIJG7RQQ9lkHfEa4U+/X1B9mj9tVC+Xpqi25ZWq5gacvDZsyHzB6f722/oH7M/ZQuoj3YjiyzWAM/0aEReuHiIBQsthhL2f0acVfkWatR2uMLWKzEa/tuUeZ32DzrVqh0eHmiCXvpECipQ1QB0iXK74j1VvBEljC5IvNGZJqlg6FBlSIwVS4eNiEjHZzUCr0l8MjJDD3tUvulF2G/UYN8F198GLsnx+8SOSEyMLuitV2juLg4E3N5SRLruQ2J3qtUR5lcOGj3qgVYs5edp1VDusjbneAgoSeSa0AWVfBpRL2kGu0l60sGxSOlLW2bml1bAPvw0qd8yA+gzDxOhBRH3my+Gu0Aq9akBMqq51QOr8F03IBh1oP3508jKXWNgSrvrYKks4gFh7G50L9Abzw8JM2VxBGcoe0gInMVLqHxs/MY0UsXB0kWyk2ZM+SOsGwzy1vj6ff5AAbSqliv/AIBw9TR0w7h2mfBZ9hAaBk0FJ9LfH/vVqirAyl2VMX48SaMXzrLfFGGWD80qiTOej1mgsDEbsGCi7N9b/Uj9KAZ6U2vSoSwMBl5sxF71pcKYwW6f4N6AllVJPZBtA9Y=
+  app: mix-tape.io
+  on:
+    repo: mix-tape/mix-tape.io
