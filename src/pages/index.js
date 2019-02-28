@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 const ContentWrapper = styled.section`
@@ -12,6 +11,7 @@ const ContentWrapper = styled.section`
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
+  cursor: pointer;
 `
 
 const Title = styled.h1`
@@ -27,13 +27,14 @@ const Availability = styled.h2`
   font-weight: 300;
   line-height: 1;
   margin-top: 0;
-  color: #fff;
+  color: #fefefe;
 `
 
-const IndexPage = () =>
-  <ContentWrapper>
+const IndexPage = () => (
+  <ContentWrapper onClick={() => location.replace('mailto:hey@mix-tape.io')}>
     <Title>mix-tape.io creative technology</Title>
-    <Availability>Available for projects Q1 2018</Availability>
+    <Availability>Available for projects Q3 2019</Availability>
   </ContentWrapper>
+)
 
 export default IndexPage

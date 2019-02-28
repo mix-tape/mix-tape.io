@@ -10,7 +10,8 @@
     "gatsby-plugin-sass": "^1.0.12",
     "gatsby-plugin-styled-components": "^1.0.5",
     "normalize.css": "^7.0.0",
-    "react-typekit": "^1.1.0"
+    "react-typekit": "^1.1.0",
+    "surge": "^0.20.1"
   },
   "keywords": [
     "gatsby"
@@ -19,8 +20,9 @@
   "main": "n/a",
   "scripts": {
     "start": "gatsby build && gatsby serve -p $PORT -H 0.0.0.0",
-    "build": "gatsby build",
+    "build": "gatsby build && cp ./CNAME ./public/",
     "develop": "gatsby develop",
+    "deploy": "gatsby build && surge public",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
